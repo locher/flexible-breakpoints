@@ -140,7 +140,7 @@ Matches everything equal or larger than the given width.
 Matches everything smaller than the given width.
 
 ```
-@include width-above($feather-weight){
+@include width-below($feather-weight){
 	//everything smaller than 300px
 }
 ```
