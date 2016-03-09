@@ -39,6 +39,27 @@ $breakpoints: null;
 		@content;
 	}
 }
+@mixin height-above($breakpoint){
+	@media only screen and (min-height: $breakpoint){
+		@content;
+	}
+}
+@mixin height-below($breakpoint){
+	@media only screen and (max-height: $breakpoint){
+		@content;
+	}
+}
+@mixin resolution-above($ratio){
+    @media only screen and (min-resolution: $ratio){
+		@content;
+	}
+}
+
+@mixin resolution-below($ratio){
+    @media only screen and (max-resolution: $ratio){
+		@content;
+	}
+}
 @mixin width-matches($size){
 	$i: 1;
 	@each $breakpoint in $breakpoints{
